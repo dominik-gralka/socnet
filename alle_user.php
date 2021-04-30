@@ -52,7 +52,7 @@ include 'database_login.php';
     <script type="text/javascript">
         function getCookie() {
             var cookieName = 'user';
-            const user = getCookie("user");
+            const user = getCookie('user');
             var name = cookieName + "=";
             var ca = document.cookie.split(';');
             for (var i = 0; i < ca.length; i++) {
