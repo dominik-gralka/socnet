@@ -52,17 +52,20 @@ include 'database_login.php';
     <script type="text/javascript">
         function getCookie() {
             var cookieName = 'user';
+            const user = getCookie("user");
             var name = cookieName + "=";
             var ca = document.cookie.split(';');
             for (var i = 0; i < ca.length; i++) {
                 var c = ca[i].trim();
                 if ((c.indexOf(name)) == 0) {
-                    alert("found");
+                    console.log("Anmeldung erfolgreich.");
+                    document.getElementById('credentials').innerHTML = 'Angemeldet als: ' + user
                     return c.substr(name.length);
                 }
 
             }
-            alert("not found");
+            console.log("Anmeldung fehlgeschlagen.");
+            document.getElementById('credentials').innerHTML = 'Nicht angemeldet'
             return null;
         }
     </script>
