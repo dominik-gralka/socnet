@@ -38,7 +38,7 @@ include 'database_login.php';
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
 
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         function getCookie() {
             var cookieName = 'user';
             var name = cookieName + "=";
@@ -47,13 +47,11 @@ include 'database_login.php';
                 var c = ca[i].trim();
                 if ((c.indexOf(name)) == 0) {
                     console.log("Anmeldung erfolgreich.");
-                    document.getElementById('credentials').innerHTML = document.cookie
                     return c.substr(name.length);
                 }
 
             }
             console.log("Anmeldung fehlgeschlagen.");
-            document.getElementById('credentials').innerHTML = 'Nicht angemeldet'
             return null;
         }
 
@@ -67,7 +65,20 @@ include 'database_login.php';
 
     <script>
         setTimeout(function() { getCookie(); }, 1000);
-    </script>
+    </script>-->
+
+    <span id="cred"><span>
+    <script>
+document.getElementById('cred').innerHTML=listCookies()
+function listCookies() {
+    var theCookies = document.cookie.split(';');
+    var aString = '';
+    for (var i = 1 ; i <= theCookies.length; i++) {
+        aString += i + ' ' + theCookies[i-1] + "\n";
+    }
+    return aString;
+}
+</script>
 
 	</body>
 </html>
