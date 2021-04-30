@@ -39,14 +39,14 @@ include 'database_login.php';
     <script type="text/javascript">
         function getCookie() {
             var cookieName = 'user';
-            var $fusername = $_POST['username'];
+            var username = getCookie("user")
             var name = cookieName + "=";
             var ca = document.cookie.split(';');
             for (var i = 0; i < ca.length; i++) {
                 var c = ca[i].trim();
                 if ((c.indexOf(name)) == 0) {
                     console.log("Anmeldung erfolgreich.");
-                    document.getElementById('credentials').innerHTML = 'Angemeldet als: ' + $fusername
+                    document.getElementById('credentials').innerHTML = 'Angemeldet als: ' + username
                     return c.substr(name.length);
                 }
 
