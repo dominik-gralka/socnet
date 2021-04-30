@@ -3,7 +3,7 @@ include 'database_login.php';
 ?>
 <html lang="de">
 	<head><title>socnet - Das soziale Netzwerk</title></head>
-	<body onload="getCookie()">
+	<body>
     <?php include "./header.html" ?>
 	<!--	<br>
 		<table border="1">
@@ -35,6 +35,10 @@ include 'database_login.php';
 		</table>-->
 
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
+
+    <script>
+        getCookie();
+    </script>
 
     <script type="text/javascript">
         function getCookie() {
