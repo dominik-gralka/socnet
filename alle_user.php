@@ -69,22 +69,18 @@ include 'database_login.php';
             // because unescape has been deprecated, replaced with decodeURI
             //return unescape(dc.substring(begin + prefix.length, end));
             return decodeURI(dc.substring(begin + prefix.length, end));
-            console.log('getCookie() executed.');
-            execute();
         }
 
-        function execute() {
-            const user = getCookie("user");
+        function doSomething() {
+            var usercookie = getCookie("MyCookie");
 
-            if (user == null) {
+            if (usercookie == null) {
                 // do cookie doesn't exist stuff;
-                document.getElementById('credentials').innerHTML = 'Angemeldet als: ' + user
-                console.log("Cookie existiert nicht");
+                console.log('Cookie existiert nicht.');
             }
             else {
+                console.log('Cookie existiert.')
                 // do cookie exists stuff
-                document.getElementById('credentials').innerHTML = 'Angemeldet als: ' + user
-                console.log("Cookie existiert");
             }
         }
     </script>
