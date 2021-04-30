@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ad524017-6051-4863-b272-a240a750b315" name="F-CD2" url="http://gralka.constellate.de">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="remote.gralka.constellate.de" port="22" sshConfigId="6a4bf589-af5b-45b3-bc02-ed9eeaed0ae4" sshConfig="F-CD2">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
