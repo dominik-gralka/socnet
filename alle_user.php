@@ -3,7 +3,7 @@ include 'database_login.php';
 ?>
 <html lang="de">
 	<head><title>socnet - Das soziale Netzwerk</title></head>
-	<body onload="getCookie()">
+	<body onload="cookieExists(user)">
 	<div class="menu-bar" style="margin-top:1%; margin-bottom:1%;">
 		<h1>socnet</h1>
         <p id="credentials">Anmeldung ausstehend</p>
@@ -50,38 +50,15 @@ include 'database_login.php';
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
 
     <script type="text/javascript">
-        function getCookie(user) {
-            var dc = document.cookie;
-            var prefix = user + "=";
-            var begin = dc.indexOf("; " + prefix);
-            if (begin == -1) {
-                begin = dc.indexOf(prefix);
-                if (begin != 0) return null;
-            }
-            else
-            {
-                begin += 2;
-                var end = document.cookie.indexOf(";", begin);
-                if (end == -1) {
-                    end = dc.length;
+        function cookieExists(user) {
+            var cks = document.cookie.split(';');
+            for(i = 0; i < cks.length; i++)
+                if (cks[i].split('=')[0].trim() == user) {
+                    console.log('Cookie existiert.')
                 }
-            }
-            // because unescape has been deprecated, replaced with decodeURI
-            //return unescape(dc.substring(begin + prefix.length, end));
-            return decodeURI(dc.substring(begin + prefix.length, end));
-        }
-
-        const usercookie = getCookie("user");
-
-        if (usercookie == null) {
-                // do cookie doesn't exist stuff;
-                console.log('Cookie existiert nicht.');
-            }
-            else {
-                console.log('Cookie existiert.')
-                // do cookie exists stuff
-            }
-
+                else {
+                    console.log('Cookie existiert nicht.')
+                }
         }
     </script>
 
