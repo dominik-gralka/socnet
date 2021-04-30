@@ -37,8 +37,7 @@ include 'database_login.php';
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
 
     <script type="text/javascript">
-        function getCookie() {
-            var cookieName = 'user';
+        function getCookie(cookieName) {
             var name = cookieName + "=";
             var ca = document.cookie.split(';');
             for (var i = 0; i < ca.length; i++) {
@@ -61,6 +60,10 @@ include 'database_login.php';
             var value = re.exec(document.cookie);
             return (value != null) ? unescape(value[1]) : null;
         }
+    </script>
+
+    <script type="text/javascript">
+        getCookie('user');
     </script>
 
 	</body>
