@@ -6,7 +6,7 @@ include 'database_login.php';
 	<body>
     <?php include "./header.html" ?>
     <?php include "./secure/alle_user_execute.php" ?>
-    <?php alert(localStorage.getItem("key1")); ?>
+    <?php alert(localStorage.getItem("username")); ?>
 	<!--	<br>
 		<table border="1">
 		<tr>

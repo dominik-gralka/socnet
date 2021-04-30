@@ -1,4 +1,3 @@
-<?php include "./header.html" ?>
 <br>
 <table border="1">
     <tr>
