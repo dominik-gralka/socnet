@@ -67,7 +67,7 @@ include 'database_login.php';
 
 
     <?php
-        alert($_COOKIE['user']);
+        console.log($_COOKIE['user']);
     ?>
 
 	</body>
