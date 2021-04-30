@@ -3,11 +3,7 @@
 		<title>
 			socnet - Das soziale Netzwerk - Adminbereich
 		</title>
-        <script>
-            $(function(){
-                $("#includedContent").load("header.html");
-            });
-        </script>
+        <link rel="import" href="header.html">
 	</head>
 	<body>
     </body>
