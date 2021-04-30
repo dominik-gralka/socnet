@@ -5,6 +5,8 @@ include 'database_login.php';
 	<head><title>socnet - Das soziale Netzwerk</title></head>
 	<body>
     <?php include "./header.html" ?>
+    <?php include "./secure/alle_user_execute.php" ?>
+    <?php alert(localStorage.getItem("key1")); ?>
 	<!--	<br>
 		<table border="1">
 		<tr>
@@ -37,7 +39,7 @@ include 'database_login.php';
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
 
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         function getCookie() {
             var cookieName = 'user';
             var name = cookieName + "=";
@@ -62,20 +64,11 @@ include 'database_login.php';
             var value = re.exec(document.cookie);
             return (value != null) ? unescape(value[1]) : null;
         }
-    </script>
+    </script>-->
+
 
     <script>
         getCookie();
-    </script>
-
-    <script type="text/javascript">
-        let $cookie_name = "user";
-        if(!isset($_COOKIE[$cookie_name])) {
-            echo "Cookie named '" . $cookie_name . "' is not set!";
-        } else {
-            echo "Cookie '" . $cookie_name . "' is set!<br>";
-            echo "Value is: " . $_COOKIE[$cookie_name];
-        }
     </script>
 
 	</body>
