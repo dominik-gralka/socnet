@@ -6,7 +6,6 @@ include 'database_login.php';
 	<body>
     <?php include "./header.html" ?>
     <?php include "./secure/alle_user_execute.php" ?>
-    <?php alert(localStorage.getItem("username")); ?>
 	<!--	<br>
 		<table border="1">
 		<tr>
@@ -67,9 +66,9 @@ include 'database_login.php';
     </script>-->
 
 
-    <script>
-        getCookie();
-    </script>
+    <?php
+        alert($_COOKIE['user']);
+    ?>
 
 	</body>
 

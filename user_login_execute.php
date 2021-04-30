@@ -21,7 +21,6 @@ if (mysql_num_rows($result)==1){
 	echo "Anmeldung erfolgreich. <br>Sie werden augenblicklich weitergeleitet.";
 	header('Refresh: 3; URL=http://localhost/Webservice/socnet/index.php');
 	setcookie($cookie_name, $cookie_value, time() + (86400 * 1), "/"); // 86400 = 1 day
-    localStorage.setItem("username", $fusername);
 }
 else{
     echo "Anmeldung fehlgeschlagen. <br>Sie werden augenblicklich weitergeleitet.";
