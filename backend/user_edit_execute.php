@@ -22,23 +22,23 @@ $result = mysql_query($insert);
 	<body>
 	<div class="menu-bar" style="margin-top:1%; margin-bottom:1%;">
 		<h1>socnet</h1>
-		<a href="alle_user.php">Nutzer anzeigen</a>
+		<a href="../alle_user.php">Nutzer anzeigen</a>
 		&nbsp;
-		<a href="user_anlegen.php">Neuen Nutzer anlegen</a>
+		<a href="../user_anlegen.php">Neuen Nutzer anlegen</a>
 		&nbsp;
-		<a href="user_edit.php">Nutzer bearbeiten</a>
+		<a href="../user_edit.php">Nutzer bearbeiten</a>
 		&nbsp;
-		<a href="user_delete.php">Nutzer entfernen</a>
+		<a href="../user_delete.php">Nutzer entfernen</a>
 		&nbsp;
-		<a href="user_login.php">Anmelden</a>		
+		<a href="../user_login.php">Anmelden</a>
 		&nbsp;
-		<a href="index.php">Zum Hauptverzeichnis</a>		
+		<a href="../index.php">Zum Hauptverzeichnis</a>
 		<hr style="margin-top:2%;">
 	</div>
 		<br>
 		<p>
 		Ihr Nutzer: <?php echo $fname; ?> mit der ID <?php echo $fid; ?> wurde aktualisiert.
 		</p>
-    <script type="text/javascript" src="cookiehandler.js"></script>
+    <script type="text/javascript" src="../javascript/cookiehandler.js"></script>
 	</body>
 </html>
