@@ -51,8 +51,8 @@ include 'database_login.php';
 
     <script type="text/javascript">
         function cookieExists(user) {
-            const cks = document.cookie.split(';');
-            for(let i = 0; i < cks.length; i++)
+            var cks = document.cookie.split(';');
+            for(i = 0; i < cks.length; i++)
                 if (cks[i].split('=')[0].trim() == user) {
                     console.log('Cookie existiert.')
                 }
