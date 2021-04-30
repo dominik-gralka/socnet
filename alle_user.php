@@ -36,9 +36,6 @@ include 'database_login.php';
 
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
 
-    <script>
-        getCookie();
-    </script>
 
     <script type="text/javascript">
         function getCookie() {
@@ -64,6 +61,20 @@ include 'database_login.php';
             var re = new RegExp(name + "=([^;]+)");
             var value = re.exec(document.cookie);
             return (value != null) ? unescape(value[1]) : null;
+        }
+    </script>
+
+    <script>
+        getCookie();
+    </script>
+
+    <script type="text/javascript">
+        let $cookie_name = "user";
+        if(!isset($_COOKIE[$cookie_name])) {
+            echo "Cookie named '" . $cookie_name . "' is not set!";
+        } else {
+            echo "Cookie '" . $cookie_name . "' is set!<br>";
+            echo "Value is: " . $_COOKIE[$cookie_name];
         }
     </script>
 
