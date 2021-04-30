@@ -9,7 +9,7 @@
   <input type="hidden" name="SubmitCheck" value="sent" style="display:block;">
   <input type="Submit" name="Form1_Submit" value="Entfernen" style="margin-top:1%; display:block-inline;">
 </form>
-    <script type="text/javascript" src="cookiehandler.js"></script>
+    <script type="text/javascript" src="javascript/cookiehandler.js"></script>
 </body>
 
 </html>

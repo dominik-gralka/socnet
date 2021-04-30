@@ -16,6 +16,6 @@ include 'database_login.php';
 			<br><br>
 			<input type="submit" value="Aktualisieren">
 		</form>
-    <script type="text/javascript" src="cookiehandler.js"></script>
+    <script type="text/javascript" src="javascript/cookiehandler.js"></script>
 	</body>
 </html>

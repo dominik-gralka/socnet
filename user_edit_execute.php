@@ -25,6 +25,6 @@ $result = mysql_query($insert);
 		<p>
 		Ihr Nutzer: <?php echo $fname; ?> mit der ID <?php echo $fid; ?> wurde aktualisiert.
 		</p>
-    <script type="text/javascript" src="cookiehandler.js"></script>
+    <script type="text/javascript" src="javascript/cookiehandler.js"></script>
 	</body>
 </html>
