@@ -38,7 +38,7 @@ include 'database_login.php';
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
 
 
-    <!--<script type="text/javascript">
+    <script type="text/javascript">
         function getCookie() {
             var cookieName = 'user';
             var name = cookieName + "=";
@@ -47,7 +47,7 @@ include 'database_login.php';
                 var c = ca[i].trim();
                 if ((c.indexOf(name)) == 0) {
                     console.log("Anmeldung erfolgreich.");
-                    <?php include "./secure/alle_user_execute.php" ?>
+                    document.getElementById('credentials').innerHTML = document.cookie
                     return c.substr(name.length);
                 }
 
@@ -63,14 +63,11 @@ include 'database_login.php';
             var value = re.exec(document.cookie);
             return (value != null) ? unescape(value[1]) : null;
         }
-    </script>-->
+    </script>
 
-
-    <?php
-        console.log($_COOKIE['user']);
-    ?>
+    <script>
+        getCookie();
+    </script>
 
 	</body>
-
-
 </html>
