@@ -37,37 +37,5 @@ include 'database_login.php';
 
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
 
-
-    <script type="text/javascript">
-        function getCookie() {
-            var cookieName = 'user';
-            var name = cookieName + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i].trim();
-                if ((c.indexOf(name)) == 0) {
-                    console.log("Anmeldung erfolgreich.");
-                    document.getElementById('credentials').innerHTML = document.cookie
-                    return c.substr(name.length);
-                }
-
-            }
-            console.log("Anmeldung fehlgeschlagen.");
-            document.getElementById('credentials').innerHTML = 'Nicht angemeldet'
-            return null;
-        }
-
-        function readCookie(name)
-        {
-            var re = new RegExp(name + "=([^;]+)");
-            var value = re.exec(document.cookie);
-            return (value != null) ? unescape(value[1]) : null;
-        }
-    </script>
-
-    <script>
-        getCookie();
-    </script>
-
 	</body>
 </html>
