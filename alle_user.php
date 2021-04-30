@@ -3,7 +3,7 @@ include 'database_login.php';
 ?>
 <html lang="de">
 	<head><title>socnet - Das soziale Netzwerk</title></head>
-	<body onload="cookieExists()">
+	<body onload="getCookie()">
 	<div class="menu-bar" style="margin-top:1%; margin-bottom:1%;">
 		<h1>socnet</h1>
         <p id="credentials">Anmeldung ausstehend</p>
@@ -50,16 +50,20 @@ include 'database_login.php';
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
 
     <script type="text/javascript">
-        function cookieExists(user) {
-            var cks = document.cookie.split(';');
-            for(i = 0; i < cks.length; i++)
-                if (cks[i].split('=')[0].trim() == user) {
-                    console.log('Cookie existiert.')
-                }
-                else {
-                    console.log('Cookie existiert nicht.')
-                }
+        function getCookie (name,value) {
+            if(document.cookie.indexOf(name) == 0)
+                return -1<document.cookie.indexOf(value?name+"="+value+";":name+"=")
+                console.log('1');
+            else if(value && document.cookie.indexOf("; "+name+"="+value) + name.length + value.length + 3== document.cookie.length) //match without an ending ';' if its the last
+                return true
+                console.log('2');
+            else { //match cookies in the middle with 2 ';' if you want to check for a value
+                return -1<document.cookie.indexOf("; "+(value?name+"="+value + ";":name+"="))
+                console.log('3');
+            }
         }
+        //getCookie("user") //false
+        getCookie("__user" ) //true
     </script>
 
 	</body>
