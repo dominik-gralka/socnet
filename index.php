@@ -1,7 +1,7 @@
 <html lang="de">													<!-- Hier beginnt die HTML Seite -->
 	<head>
 		<title>
-			socnet - Das soziale Netzwerk - Adminbereich				<!-- Wird im Browser ganz oben angezeigt -->
+			socnet - Das soziale Netzwerk - Adminbereich
 		</title>
 	</head>
 	<body>
