@@ -1,7 +1,7 @@
 <?php
 include 'database_login.php';
 ?>
-<html>
+<html lang="de">
 	<head><title>socnet - Das soziale Netzwerk</title></head>
 	<body>
 	<div class="menu-bar" style="margin-top:1%; margin-bottom:1%;">
@@ -19,14 +19,14 @@ include 'database_login.php';
 		<hr style="margin-top:2%;">
 	</div>
 		<br>
-		<table border="1";>
+		<table border="1">
 		<tr>
 			<th>ID</th>
 			<th>Name</th>
 			<th>Vorname</th>
 			<th>Nutzername</th>
 			<th>E-Mail</th>
-			<th>Passwort</td>
+			<th>Passwort</th>
 		</tr>
 
 			<?php
