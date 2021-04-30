@@ -3,7 +3,9 @@
 		<title>
 			socnet - Das soziale Netzwerk - Adminbereich
 		</title>
-        <link rel="import" href="header.html">
+        <OBJECT data="header.html">
+            Warning: header.html could not be included.
+        </OBJECT>
 	</head>
 	<body>
     </body>
