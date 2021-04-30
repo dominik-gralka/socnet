@@ -76,7 +76,12 @@ function listCookies() {
     for (var i = 1 ; i <= theCookies.length; i++) {
         aString += i + ' ' + theCookies[i-1] + "\n";
     }
-    return theCookies;
+    let CookieValue = theCookies.filter(function(cookie) {
+        return cookie.name === 'user'
+    })
+
+    return CookieValue;
+
 }
 </script>
 
