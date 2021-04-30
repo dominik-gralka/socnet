@@ -71,10 +71,9 @@ include 'database_login.php';
             return decodeURI(dc.substring(begin + prefix.length, end));
         }
 
-        function doSomething() {
-            var usercookie = getCookie("MyCookie");
+        const usercookie = getCookie("user");
 
-            if (usercookie == null) {
+        if (usercookie == null) {
                 // do cookie doesn't exist stuff;
                 console.log('Cookie existiert nicht.');
             }
@@ -82,6 +81,7 @@ include 'database_login.php';
                 console.log('Cookie existiert.')
                 // do cookie exists stuff
             }
+
         }
     </script>
 
