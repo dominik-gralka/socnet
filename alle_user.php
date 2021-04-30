@@ -50,20 +50,21 @@ include 'database_login.php';
 	<!--<script type="text/javascript" src="cookie.js"></script>-->
 
     <script type="text/javascript">
-        function getCookie (name,value) {
-            if(document.cookie.indexOf(name) == 0)
-                return -1<document.cookie.indexOf(value?name+"="+value+";":name+"=")
-                console.log('1');
-            else if(value && document.cookie.indexOf("; "+name+"="+value) + name.length + value.length + 3== document.cookie.length) //match without an ending ';' if its the last
-                return true
-                console.log('2');
-            else { //match cookies in the middle with 2 ';' if you want to check for a value
-                return -1<document.cookie.indexOf("; "+(value?name+"="+value + ";":name+"="))
-                console.log('3');
+        function getCookie() {
+            var cookieName = 'user';
+            var name = cookieName + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i].trim();
+                if ((c.indexOf(name)) == 0) {
+                    alert("found");
+                    return c.substr(name.length);
+                }
+
             }
+            alert("not found");
+            return null;
         }
-        //getCookie("user") //false
-        getCookie("__user" ) //true
     </script>
 
 	</body>
