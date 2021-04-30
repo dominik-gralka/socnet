@@ -20,7 +20,7 @@ include 'database_login.php';
 		<hr style="margin-top:2%;">
 	</div>
 		<br>
-		<form action="backend/user_edit_execute.php" method="post">
+		<form action="user_edit_execute.php" method="post">
 			<p>ID des zu editierenden Nutzers:<br><input name="ID" type="text" size="40"></p>
 			<p>Name:<br><input name="name" type="text" size="40" ></p>
 			<p>Vorname:<br><input name="vorname" type="text" size="40"></p>
@@ -30,6 +30,6 @@ include 'database_login.php';
 			<br><br>
 			<input type="submit" value="Aktualisieren">
 		</form>
-    <script type="text/javascript" src="javascript/cookiehandler.js"></script>
+    <script type="text/javascript" src="cookiehandler.js"></script>
 	</body>
 </html>

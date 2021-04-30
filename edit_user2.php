@@ -35,6 +35,6 @@ $result = mysql_query($insert);
 		<p>
 		Ihr Nutzer: <?php echo $fname; ?> wurde hinzugef&uuml;gt.
 		</p>
-    <script type="text/javascript" src="javascript/cookiehandler.js"></script>
+    <script type="text/javascript" src="cookiehandler.js"></script>
 	</body>
 </html>

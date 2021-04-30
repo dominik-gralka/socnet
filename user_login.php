@@ -20,7 +20,7 @@
 		<hr style="margin-top:2%;">
 	</div>
 	
-		<form action="backend/user_login_execute.php" method="post">
+		<form action="user_login_execute.php" method="post">
 			<p>Nutzername:<br><input name="username" type="text" size="40"></p>
 			<p>Passwort:<br><input name="passwort" type="password" size="40"></p>
 			<br><br>
