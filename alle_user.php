@@ -3,7 +3,7 @@ include 'database_login.php';
 ?>
 <html lang="de">
 	<head><title>socnet - Das soziale Netzwerk</title></head>
-	<body>
+	<body onload="getCookie()">
 	<div class="menu-bar" style="margin-top:1%; margin-bottom:1%;">
 		<h1>socnet</h1>
         <p id="credentials">Anmeldung ausstehend</p>

@@ -1,4 +1,4 @@
-window.document.onload = function getCookie(user) {
+function getCookie(user) {
     var dc = document.cookie;
     var prefix = user + "=";
     var begin = dc.indexOf("; " + prefix);
