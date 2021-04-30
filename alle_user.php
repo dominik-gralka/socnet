@@ -3,7 +3,7 @@ include 'database_login.php';
 ?>
 <html lang="de">
 	<head><title>socnet - Das soziale Netzwerk</title></head>
-	<body onload="cookieExists(user)">
+	<body onload="cookieExists()">
 	<div class="menu-bar" style="margin-top:1%; margin-bottom:1%;">
 		<h1>socnet</h1>
         <p id="credentials">Anmeldung ausstehend</p>
@@ -51,8 +51,8 @@ include 'database_login.php';
 
     <script type="text/javascript">
         function cookieExists(user) {
-            var cks = document.cookie.split(';');
-            for(i = 0; i < cks.length; i++)
+            const cks = document.cookie.split(';');
+            for(let i = 0; i < cks.length; i++)
                 if (cks[i].split('=')[0].trim() == user) {
                     console.log('Cookie existiert.')
                 }
