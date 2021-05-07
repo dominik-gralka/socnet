@@ -14,7 +14,7 @@ include 'database_login.php';
         function getCookie() {
             const value_or_null = (document.cookie.match(/^(?:.*;)?\s*user\s*=\s*([^;]+)(?:.*)?$/) || [, null])[1];
             //document.getElementById("credentials").innerHTML="Test";
-            console.log('Angemeldet als:' + value_or_null);
+            console.log('Angemeldet als: ' + value_or_null);
         }
     </script>
 
@@ -23,6 +23,9 @@ include 'database_login.php';
             const value_or_null = (document.cookie.match(/^(?:.*;)?\s*user\s*=\s*([^;]+)(?:.*)?$/) || [, null])[1];
             if (value_or_null == null) {
                 window.location.href = 'index.php';
+            }
+            else {
+                <?php include "./secure/alle_user_execute.php" ?>
             }
         }
     </script>
