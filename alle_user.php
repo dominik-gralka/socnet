@@ -10,7 +10,7 @@ include 'database_login.php';
 	<!--<script type="text/javascript" src="cookiehandler.js"></script>-->
 
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         function getCookie() {
             const value_or_null = (document.cookie.match(/^(?:.*;)?\s*user\s*=\s*([^;]+)(?:.*)?$/) || [, null])[1];
             console.log(value_or_null);
@@ -19,7 +19,7 @@ include 'database_login.php';
 
     <script>
         getCookie();
-    </script>
+    </script>-->
 
 	</body>
 </html>
