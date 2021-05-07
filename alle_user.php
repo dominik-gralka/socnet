@@ -4,6 +4,7 @@ include 'database_login.php';
 <html lang="de">
 	<head><title>socnet - Das soziale Netzwerk</title></head>
 	<body>
+    <p class="credentials"></p>
     <?php include "./header.html" ?>
     <?php include "./secure/alle_user_execute.php" ?>
 
