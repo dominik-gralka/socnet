@@ -8,9 +8,28 @@ include 'database_login.php';
     <?php include "./header.html" ?>
     <?php include "./secure/alle_user_execute.php" ?>
 
-	<script type="text/javascript" src="javascript/cookiehandler.js"></script>
-    <script type="text/javascript" src="javascript/security.js">
-        getSecureCookie()
+	<!--<script type="text/javascript" src="javascript/cookiehandler.js"></script>-->
+
+    <script type="text/javascript">
+        function getCookie() {
+            const value_or_null = (document.cookie.match(/^(?:.*;)?\s*user\s*=\s*([^;]+)(?:.*)?$/) || [, null])[1];
+            //document.getElementById("credentials").innerHTML="Test";
+            console.log('Angemeldet als:' + value_or_null);
+        }
+    </script>
+
+    <script type="text/javascript">
+        function getSecureCookie() {
+            const value_or_null = (document.cookie.match(/^(?:.*;)?\s*user\s*=\s*([^;]+)(?:.*)?$/) || [, null])[1];
+            if (value_or_null == null) {
+                window.location.href = 'index.php';
+            }
+        }
+    </script>
+
+    <script>
+        getSecureCookie();
+        getCookie();
     </script>
 
 
