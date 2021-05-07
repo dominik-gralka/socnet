@@ -6,10 +6,11 @@ include 'database_login.php';
 	<body>
     <p class="credentials"></p>
     <?php include "./header.html" ?>
-    <?php include "./secure/alle_user_execute.php" ?>
 
-	<script type="text/javascript" src="cookiehandler.js"></script>
-    <script type="text/javascript" src="security.js">getSecureCookie()</script>
+	<!--<script type="text/javascript" src="javascript/cookiehandler.js"></script>-->
+    <script type="text/javascript" src="javascript/security.js">
+        getSecureCookie()
+    </script>
 
 
 
