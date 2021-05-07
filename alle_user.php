@@ -24,9 +24,6 @@ include 'database_login.php';
             if (value_or_null == null) {
                 window.location.href = 'index.php';
             }
-            else {
-                <?php include "./secure/alle_user_execute.php" ?>
-            }
         }
     </script>
 
