@@ -6,7 +6,7 @@ include 'database_login.php';
 	<body>
     <p class="credentials"></p>
     <?php include "./header.html" ?>
-    <?php include "./secure/alle_user_execute.php" ?>
+
 
 	<!--<script type="text/javascript" src="javascript/cookiehandler.js"></script>-->
 
@@ -31,7 +31,7 @@ include 'database_login.php';
         getSecureCookie();
         getCookie();
     </script>
-
+    <?php include "./secure/alle_user_execute.php" ?>
 
 
     <!--<script type="text/javascript">
