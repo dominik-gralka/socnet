@@ -1,4 +1,5 @@
 language: php
-php:
-  - '5.3.8'
-  dist: precise
+jobs:
+  include:
+    - php: 5.3.8
+      dist: precise
