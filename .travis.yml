@@ -2,4 +2,4 @@ language: php
 jobs:
   include:
     - php: 5.3
-      dist: trusty
+      dist: precise
